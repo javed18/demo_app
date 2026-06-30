@@ -345,20 +345,12 @@ export default function DashboardPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -24 }}
                       transition={{ duration: 0.35 }}
-                      className="grid gap-6 lg:grid-cols-[0.65fr_0.35fr]"
+                      className="w-full"
                     >
-                      <div>
-                        <p className="text-[11px] uppercase tracking-[0.32em] text-[#d4af37]/80">{currentFavorite.name || "A teammate"}</p>
-                        <p className="mt-5 text-2xl leading-10 text-zinc-100 sm:text-3xl">
-                          “{currentFavorite.favorite_team_memory}”
-                        </p>
-                      </div>
-                      <div className="rounded-[24px] border border-white/10 bg-white/5 p-6">
-                        <p className="text-[11px] uppercase tracking-[0.32em] text-zinc-500">Featured memory</p>
-                        <p className="mt-4 text-lg leading-8 text-zinc-300">
-                          A luminous reminder of the energy, care, and connection this team carried together.
-                        </p>
-                      </div>
+                      <p className="text-[11px] uppercase tracking-[0.32em] text-[#d4af37]/80">{currentFavorite.name || "A teammate"}</p>
+                      <p className="mt-5 text-2xl leading-10 text-zinc-100 sm:text-3xl">
+                        "{currentFavorite.favorite_team_memory}"
+                      </p>
                     </motion.article>
                   )}
                 </AnimatePresence>
